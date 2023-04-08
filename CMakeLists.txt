@@ -8,6 +8,7 @@ project(robot_gui_bridge)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  libuvc_camera
   rosbridge_server
 )
 
@@ -103,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES robot_gui_bridge
-#  CATKIN_DEPENDS rosbridge_server
+#  CATKIN_DEPENDS libuvc_camera rosbridge_server
 #  DEPENDS system_lib
 )
 
